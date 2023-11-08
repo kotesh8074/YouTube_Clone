@@ -1,0 +1,108 @@
+.thumbnail {
+  /* width: 300px; */
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+/* .video-title {
+  width: 300px;
+} */
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+/* OR....video-stats{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+} */
+.video-author {
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+/* .channel-picture {
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+  background-color: gray;
+}
+.video-info {
+  display: inline-block;
+  width: 200px;
+  background-color: gray !important;
+} */
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  /* text-decoration:underline; */
+}
+/* using media query we can reduce size without affecting thumnails */
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width:999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/* using media query we can reduce size without affecting thumnails */
+
+.video-time {
+  font-size: 12px;
+  font-weight: 500;
+  /* padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px; */
+  /* OR below */
+  /* Top right bottom left values in below padding element and also Margin is same */
+  padding: 4px 4px 4px 4px;
+  background-color: black;
+  border-radius: 2px;
+  color: white;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
